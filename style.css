@@ -1,0 +1,191 @@
+body,
+ul,
+a,
+h1,
+section,
+main,
+p,
+h3,
+div {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*intro section*/
+header {
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("photo-1558346648-9757f2fa4474.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+nav {
+  margin: 0px;
+  padding: 0px;
+  background: rgba(255, 255, 255, 0.6);
+}
+ul,
+header a {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: grey;
+}
+.intro {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 20px;
+}
+
+a:hover {
+  color: black;
+}
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: grey;
+}
+
+/*about me section*/
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+  width: 100vw;
+  background-color: #FBE8EE;
+  background-size: cover;
+}
+
+#aboutInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 5px;
+  height: 100vh;
+}
+/*Allows me to remove pic when on mobile*/
+/*#aboutImg{
+  display:none;
+}*/
+
+/*project section*/
+
+#projects {
+  background-image: url("workyes.png");
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+#projectInfo {
+  background-color: white;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+#proImg {
+  width: 100vw;
+}
+/*contact section*/
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 10px;
+  text-align: center;
+  background-color: #FBE8EE;
+  height: 100vh;
+  line-height: 2.6;
+  width: 100vw;
+}
+
+/*max width
+@media all and (max-width: 1010px) {
+
+
+  #projects {
+    display: flex;
+    flex-direction: column;
+  }
+  #proImg {
+    width: 100vw;
+  }
+
+  #contact {
+    letter-spacing: 10px;
+  }
+}*/
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-image: url("photo-1558346648-9757f2fa4474.jpeg");
+  background-attachment: fixed;
+  height: 10vh;
+}
+
+/*min width 600+*/
+@media all and (min-width: 600px) {
+  header {
+    height: 100vh;
+  }
+  ul,
+  header a {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  #projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*allows me to add pic on desktop*/
+  /* #aboutImg{
+    display:flex;
+  }*/
+
+  #proImg {
+    display: flex;
+    width: 70vw;
+  }
+}
+
+/* min-width 1200+*/
+@media all and (min-width: 1000px) {
+  #projects {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #projectInfo {
+    height: 90vh;
+  }
+}
